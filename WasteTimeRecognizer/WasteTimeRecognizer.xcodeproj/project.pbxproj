@@ -14,6 +14,7 @@
 		B51E8DC31D00E76300460028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51E8DC11D00E76300460028 /* LaunchScreen.storyboard */; };
 		B51E8DCE1D00E76300460028 /* WasteTimeRecognizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E8DCD1D00E76300460028 /* WasteTimeRecognizerTests.swift */; };
 		B51E8DD91D00E76300460028 /* WasteTimeRecognizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E8DD81D00E76300460028 /* WasteTimeRecognizerUITests.swift */; };
+		EB856A319EFDE380EC8E0DAF /* Pods_WasteTimeRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F062B6772AEAA0929990006D /* Pods_WasteTimeRecognizer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07FF337EEDC2A4D40BB42FF6 /* Pods-WasteTimeRecognizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasteTimeRecognizer.release.xcconfig"; path = "Pods/Target Support Files/Pods-WasteTimeRecognizer/Pods-WasteTimeRecognizer.release.xcconfig"; sourceTree = "<group>"; };
+		6CFFAA97C551A826E68156B1 /* Pods-WasteTimeRecognizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasteTimeRecognizer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WasteTimeRecognizer/Pods-WasteTimeRecognizer.debug.xcconfig"; sourceTree = "<group>"; };
 		B51E8DB51D00E76300460028 /* WasteTimeRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WasteTimeRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51E8DB81D00E76300460028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B51E8DBA1D00E76300460028 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		B51E8DD41D00E76300460028 /* WasteTimeRecognizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WasteTimeRecognizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51E8DD81D00E76300460028 /* WasteTimeRecognizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteTimeRecognizerUITests.swift; sourceTree = "<group>"; };
 		B51E8DDA1D00E76300460028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F062B6772AEAA0929990006D /* Pods_WasteTimeRecognizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WasteTimeRecognizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB856A319EFDE380EC8E0DAF /* Pods_WasteTimeRecognizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8812B9F80D3AA8B4033F876A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CFFAA97C551A826E68156B1 /* Pods-WasteTimeRecognizer.debug.xcconfig */,
+				07FF337EEDC2A4D40BB42FF6 /* Pods-WasteTimeRecognizer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B51E8DAC1D00E76300460028 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				B51E8DCC1D00E76300460028 /* WasteTimeRecognizerTests */,
 				B51E8DD71D00E76300460028 /* WasteTimeRecognizerUITests */,
 				B51E8DB61D00E76300460028 /* Products */,
+				8812B9F80D3AA8B4033F876A /* Pods */,
+				D8EF9F0DDD714A614423C367 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,14 @@
 			path = WasteTimeRecognizerUITests;
 			sourceTree = "<group>";
 		};
+		D8EF9F0DDD714A614423C367 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F062B6772AEAA0929990006D /* Pods_WasteTimeRecognizer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B51E8DDD1D00E76300460028 /* Build configuration list for PBXNativeTarget "WasteTimeRecognizer" */;
 			buildPhases = (
+				1282E3CBA436D01C535697E8 /* 📦 Check Pods Manifest.lock */,
 				B51E8DB11D00E76300460028 /* Sources */,
 				B51E8DB21D00E76300460028 /* Frameworks */,
 				B51E8DB31D00E76300460028 /* Resources */,
+				8420275E5CC9140783F6A169 /* 📦 Embed Pods Frameworks */,
+				E8FD6CDFA5C6690B6BECE0EB /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1282E3CBA436D01C535697E8 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8420275E5CC9140783F6A169 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WasteTimeRecognizer/Pods-WasteTimeRecognizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8FD6CDFA5C6690B6BECE0EB /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WasteTimeRecognizer/Pods-WasteTimeRecognizer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B51E8DB11D00E76300460028 /* Sources */ = {
@@ -397,6 +472,7 @@
 		};
 		B51E8DDE1D00E76300460028 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CFFAA97C551A826E68156B1 /* Pods-WasteTimeRecognizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WasteTimeRecognizer/Info.plist;
@@ -408,6 +484,7 @@
 		};
 		B51E8DDF1D00E76300460028 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07FF337EEDC2A4D40BB42FF6 /* Pods-WasteTimeRecognizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WasteTimeRecognizer/Info.plist;
@@ -482,6 +559,7 @@
 				B51E8DDF1D00E76300460028 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B51E8DE01D00E76300460028 /* Build configuration list for PBXNativeTarget "WasteTimeRecognizerTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +568,7 @@
 				B51E8DE21D00E76300460028 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B51E8DE31D00E76300460028 /* Build configuration list for PBXNativeTarget "WasteTimeRecognizerUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +577,7 @@
 				B51E8DE51D00E76300460028 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
