@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B51E8DB91D00E76300460028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E8DB81D00E76300460028 /* AppDelegate.swift */; };
+		B51E8DBB1D00E76300460028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E8DBA1D00E76300460028 /* ViewController.swift */; };
+		B51E8DBE1D00E76300460028 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51E8DBC1D00E76300460028 /* Main.storyboard */; };
+		B51E8DC01D00E76300460028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51E8DBF1D00E76300460028 /* Assets.xcassets */; };
+		B51E8DC31D00E76300460028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51E8DC11D00E76300460028 /* LaunchScreen.storyboard */; };
+		B51E8DCE1D00E76300460028 /* WasteTimeRecognizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E8DCD1D00E76300460028 /* WasteTimeRecognizerTests.swift */; };
+		B51E8DD91D00E76300460028 /* WasteTimeRecognizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E8DD81D00E76300460028 /* WasteTimeRecognizerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B51E8DCA1D00E76300460028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B51E8DAD1D00E76300460028 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B51E8DB41D00E76300460028;
+			remoteInfo = WasteTimeRecognizer;
+		};
+		B51E8DD51D00E76300460028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B51E8DAD1D00E76300460028 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B51E8DB41D00E76300460028;
+			remoteInfo = WasteTimeRecognizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B51E8DB51D00E76300460028 /* WasteTimeRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WasteTimeRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51E8DB81D00E76300460028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B51E8DBA1D00E76300460028 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B51E8DBD1D00E76300460028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B51E8DBF1D00E76300460028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B51E8DC21D00E76300460028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B51E8DC41D00E76300460028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51E8DC91D00E76300460028 /* WasteTimeRecognizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WasteTimeRecognizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51E8DCD1D00E76300460028 /* WasteTimeRecognizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteTimeRecognizerTests.swift; sourceTree = "<group>"; };
+		B51E8DCF1D00E76300460028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51E8DD41D00E76300460028 /* WasteTimeRecognizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WasteTimeRecognizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51E8DD81D00E76300460028 /* WasteTimeRecognizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteTimeRecognizerUITests.swift; sourceTree = "<group>"; };
+		B51E8DDA1D00E76300460028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B51E8DB21D00E76300460028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51E8DC61D00E76300460028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51E8DD11D00E76300460028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B51E8DAC1D00E76300460028 = {
+			isa = PBXGroup;
+			children = (
+				B51E8DB71D00E76300460028 /* WasteTimeRecognizer */,
+				B51E8DCC1D00E76300460028 /* WasteTimeRecognizerTests */,
+				B51E8DD71D00E76300460028 /* WasteTimeRecognizerUITests */,
+				B51E8DB61D00E76300460028 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B51E8DB61D00E76300460028 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B51E8DB51D00E76300460028 /* WasteTimeRecognizer.app */,
+				B51E8DC91D00E76300460028 /* WasteTimeRecognizerTests.xctest */,
+				B51E8DD41D00E76300460028 /* WasteTimeRecognizerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B51E8DB71D00E76300460028 /* WasteTimeRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				B51E8DB81D00E76300460028 /* AppDelegate.swift */,
+				B51E8DBA1D00E76300460028 /* ViewController.swift */,
+				B51E8DBC1D00E76300460028 /* Main.storyboard */,
+				B51E8DBF1D00E76300460028 /* Assets.xcassets */,
+				B51E8DC11D00E76300460028 /* LaunchScreen.storyboard */,
+				B51E8DC41D00E76300460028 /* Info.plist */,
+			);
+			path = WasteTimeRecognizer;
+			sourceTree = "<group>";
+		};
+		B51E8DCC1D00E76300460028 /* WasteTimeRecognizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B51E8DCD1D00E76300460028 /* WasteTimeRecognizerTests.swift */,
+				B51E8DCF1D00E76300460028 /* Info.plist */,
+			);
+			path = WasteTimeRecognizerTests;
+			sourceTree = "<group>";
+		};
+		B51E8DD71D00E76300460028 /* WasteTimeRecognizerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B51E8DD81D00E76300460028 /* WasteTimeRecognizerUITests.swift */,
+				B51E8DDA1D00E76300460028 /* Info.plist */,
+			);
+			path = WasteTimeRecognizerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B51E8DB41D00E76300460028 /* WasteTimeRecognizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B51E8DDD1D00E76300460028 /* Build configuration list for PBXNativeTarget "WasteTimeRecognizer" */;
+			buildPhases = (
+				B51E8DB11D00E76300460028 /* Sources */,
+				B51E8DB21D00E76300460028 /* Frameworks */,
+				B51E8DB31D00E76300460028 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WasteTimeRecognizer;
+			productName = WasteTimeRecognizer;
+			productReference = B51E8DB51D00E76300460028 /* WasteTimeRecognizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B51E8DC81D00E76300460028 /* WasteTimeRecognizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B51E8DE01D00E76300460028 /* Build configuration list for PBXNativeTarget "WasteTimeRecognizerTests" */;
+			buildPhases = (
+				B51E8DC51D00E76300460028 /* Sources */,
+				B51E8DC61D00E76300460028 /* Frameworks */,
+				B51E8DC71D00E76300460028 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B51E8DCB1D00E76300460028 /* PBXTargetDependency */,
+			);
+			name = WasteTimeRecognizerTests;
+			productName = WasteTimeRecognizerTests;
+			productReference = B51E8DC91D00E76300460028 /* WasteTimeRecognizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B51E8DD31D00E76300460028 /* WasteTimeRecognizerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B51E8DE31D00E76300460028 /* Build configuration list for PBXNativeTarget "WasteTimeRecognizerUITests" */;
+			buildPhases = (
+				B51E8DD01D00E76300460028 /* Sources */,
+				B51E8DD11D00E76300460028 /* Frameworks */,
+				B51E8DD21D00E76300460028 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B51E8DD61D00E76300460028 /* PBXTargetDependency */,
+			);
+			name = WasteTimeRecognizerUITests;
+			productName = WasteTimeRecognizerUITests;
+			productReference = B51E8DD41D00E76300460028 /* WasteTimeRecognizerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B51E8DAD1D00E76300460028 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Roman Sorochak";
+				TargetAttributes = {
+					B51E8DB41D00E76300460028 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					B51E8DC81D00E76300460028 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B51E8DB41D00E76300460028;
+					};
+					B51E8DD31D00E76300460028 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = B51E8DB41D00E76300460028;
+					};
+				};
+			};
+			buildConfigurationList = B51E8DB01D00E76300460028 /* Build configuration list for PBXProject "WasteTimeRecognizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B51E8DAC1D00E76300460028;
+			productRefGroup = B51E8DB61D00E76300460028 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B51E8DB41D00E76300460028 /* WasteTimeRecognizer */,
+				B51E8DC81D00E76300460028 /* WasteTimeRecognizerTests */,
+				B51E8DD31D00E76300460028 /* WasteTimeRecognizerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B51E8DB31D00E76300460028 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51E8DC31D00E76300460028 /* LaunchScreen.storyboard in Resources */,
+				B51E8DC01D00E76300460028 /* Assets.xcassets in Resources */,
+				B51E8DBE1D00E76300460028 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51E8DC71D00E76300460028 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51E8DD21D00E76300460028 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B51E8DB11D00E76300460028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51E8DBB1D00E76300460028 /* ViewController.swift in Sources */,
+				B51E8DB91D00E76300460028 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51E8DC51D00E76300460028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51E8DCE1D00E76300460028 /* WasteTimeRecognizerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51E8DD01D00E76300460028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51E8DD91D00E76300460028 /* WasteTimeRecognizerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B51E8DCB1D00E76300460028 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B51E8DB41D00E76300460028 /* WasteTimeRecognizer */;
+			targetProxy = B51E8DCA1D00E76300460028 /* PBXContainerItemProxy */;
+		};
+		B51E8DD61D00E76300460028 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B51E8DB41D00E76300460028 /* WasteTimeRecognizer */;
+			targetProxy = B51E8DD51D00E76300460028 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B51E8DBC1D00E76300460028 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B51E8DBD1D00E76300460028 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B51E8DC11D00E76300460028 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B51E8DC21D00E76300460028 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B51E8DDB1D00E76300460028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B51E8DDC1D00E76300460028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B51E8DDE1D00E76300460028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WasteTimeRecognizer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = salesshtorm.com.WasteTimeRecognizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B51E8DDF1D00E76300460028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WasteTimeRecognizer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = salesshtorm.com.WasteTimeRecognizer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B51E8DE11D00E76300460028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WasteTimeRecognizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = salesshtorm.com.WasteTimeRecognizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WasteTimeRecognizer.app/WasteTimeRecognizer";
+			};
+			name = Debug;
+		};
+		B51E8DE21D00E76300460028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WasteTimeRecognizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = salesshtorm.com.WasteTimeRecognizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WasteTimeRecognizer.app/WasteTimeRecognizer";
+			};
+			name = Release;
+		};
+		B51E8DE41D00E76300460028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WasteTimeRecognizerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = salesshtorm.com.WasteTimeRecognizerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WasteTimeRecognizer;
+			};
+			name = Debug;
+		};
+		B51E8DE51D00E76300460028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WasteTimeRecognizerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = salesshtorm.com.WasteTimeRecognizerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WasteTimeRecognizer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B51E8DB01D00E76300460028 /* Build configuration list for PBXProject "WasteTimeRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51E8DDB1D00E76300460028 /* Debug */,
+				B51E8DDC1D00E76300460028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B51E8DDD1D00E76300460028 /* Build configuration list for PBXNativeTarget "WasteTimeRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51E8DDE1D00E76300460028 /* Debug */,
+				B51E8DDF1D00E76300460028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B51E8DE01D00E76300460028 /* Build configuration list for PBXNativeTarget "WasteTimeRecognizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51E8DE11D00E76300460028 /* Debug */,
+				B51E8DE21D00E76300460028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B51E8DE31D00E76300460028 /* Build configuration list for PBXNativeTarget "WasteTimeRecognizerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51E8DE41D00E76300460028 /* Debug */,
+				B51E8DE51D00E76300460028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B51E8DAD1D00E76300460028 /* Project object */;
+}
