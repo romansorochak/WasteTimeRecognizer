@@ -114,11 +114,12 @@
 			isa = PBXGroup;
 			children = (
 				B51E8DB81D00E76300460028 /* AppDelegate.swift */,
-				B51E8DBA1D00E76300460028 /* ViewController.swift */,
-				B51E8DBC1D00E76300460028 /* Main.storyboard */,
-				B51E8DBF1D00E76300460028 /* Assets.xcassets */,
-				B51E8DC11D00E76300460028 /* LaunchScreen.storyboard */,
-				B51E8DC41D00E76300460028 /* Info.plist */,
+				B525950E1D00E93E00C04060 /* DataLayer */,
+				B525950C1D00E92600C04060 /* Models */,
+				B52595091D00E8FA00C04060 /* Controllers */,
+				B525950B1D00E91200C04060 /* Views */,
+				B525950A1D00E90600C04060 /* Resources */,
+				B525950D1D00E93000C04060 /* Supporting files */,
 			);
 			path = WasteTimeRecognizer;
 			sourceTree = "<group>";
@@ -139,6 +140,53 @@
 				B51E8DDA1D00E76300460028 /* Info.plist */,
 			);
 			path = WasteTimeRecognizerUITests;
+			sourceTree = "<group>";
+		};
+		B52595091D00E8FA00C04060 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B51E8DBA1D00E76300460028 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B525950A1D00E90600C04060 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B51E8DBF1D00E76300460028 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B525950B1D00E91200C04060 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B51E8DBC1D00E76300460028 /* Main.storyboard */,
+				B51E8DC11D00E76300460028 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B525950C1D00E92600C04060 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B525950D1D00E93000C04060 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				B51E8DC41D00E76300460028 /* Info.plist */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		B525950E1D00E93E00C04060 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataLayer;
 			sourceTree = "<group>";
 		};
 		D8EF9F0DDD714A614423C367 /* Frameworks */ = {
