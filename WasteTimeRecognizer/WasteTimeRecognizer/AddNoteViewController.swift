@@ -25,9 +25,16 @@ class AddNoteViewController : UIViewController {
     //MARK: actions
     
     @IBAction func doneAction(sender: UIBarButtonItem) {
-        DataManager.sharedInstance.addNote(
-            Note(time: NSDate(), note: noteTextField.text ?? "")
-        )
+        
+        let note = Note()
+        note.time = NSDate()
+        note.note = noteTextField.text ?? ""
+        
+        do {
+            try DataManager.sharedInstance.addNote(note)
+        } catch {
+            print(error)
+        }
         
         noteTextField.resignFirstResponder()
         

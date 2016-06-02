@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct Note {
+class Note : Object {
     
-    let time: NSDate
-    var note: String
+    dynamic var time = NSDate()
+    dynamic var note = String()
 }

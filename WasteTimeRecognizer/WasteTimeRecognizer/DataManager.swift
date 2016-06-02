@@ -7,12 +7,19 @@
 //
 
 import Foundation
+import RealmSwift
 
 class DataManager {
 
-    private(set) var notes = [Note]()
+    private let realm: Realm
     
-    private init() {}
+    var notes: Results<Note> {
+        return realm.objects(Note)
+    }
+    
+    private init() {
+        realm = try! Realm()
+    }
     
     class var sharedInstance: DataManager {
         struct Static {
@@ -25,7 +32,9 @@ class DataManager {
         return Static.sharedInstance
     }
     
-    func addNote(note: Note) {
-        notes.append(note)
+    func addNote(note: Note) throws {
+        try realm.write {
+            realm.add(note)
+        }
     }
 }
