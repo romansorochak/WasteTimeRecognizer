@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		B51E8DB91D00E76300460028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E8DB81D00E76300460028 /* AppDelegate.swift */; };
-		B51E8DBB1D00E76300460028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E8DBA1D00E76300460028 /* ViewController.swift */; };
+		B51E8DBB1D00E76300460028 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E8DBA1D00E76300460028 /* NotesViewController.swift */; };
 		B51E8DBE1D00E76300460028 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51E8DBC1D00E76300460028 /* Main.storyboard */; };
 		B51E8DC01D00E76300460028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51E8DBF1D00E76300460028 /* Assets.xcassets */; };
 		B51E8DC31D00E76300460028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51E8DC11D00E76300460028 /* LaunchScreen.storyboard */; };
 		B51E8DCE1D00E76300460028 /* WasteTimeRecognizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E8DCD1D00E76300460028 /* WasteTimeRecognizerTests.swift */; };
 		B51E8DD91D00E76300460028 /* WasteTimeRecognizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E8DD81D00E76300460028 /* WasteTimeRecognizerUITests.swift */; };
+		B52595111D00EB9800C04060 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52595101D00EB9800C04060 /* NoteCell.swift */; };
+		B52595131D00ED6900C04060 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52595121D00ED6900C04060 /* AddNoteViewController.swift */; };
+		B52595151D00EEC300C04060 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52595141D00EEC300C04060 /* Note.swift */; };
+		B52595171D00EF0000C04060 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52595161D00EF0000C04060 /* DataManager.swift */; };
+		B525951A1D00F11700C04060 /* NSDate+WTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52595191D00F11700C04060 /* NSDate+WTR.swift */; };
 		EB856A319EFDE380EC8E0DAF /* Pods_WasteTimeRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F062B6772AEAA0929990006D /* Pods_WasteTimeRecognizer.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +44,7 @@
 		6CFFAA97C551A826E68156B1 /* Pods-WasteTimeRecognizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasteTimeRecognizer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WasteTimeRecognizer/Pods-WasteTimeRecognizer.debug.xcconfig"; sourceTree = "<group>"; };
 		B51E8DB51D00E76300460028 /* WasteTimeRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WasteTimeRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51E8DB81D00E76300460028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B51E8DBA1D00E76300460028 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B51E8DBA1D00E76300460028 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		B51E8DBD1D00E76300460028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B51E8DBF1D00E76300460028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B51E8DC21D00E76300460028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +55,11 @@
 		B51E8DD41D00E76300460028 /* WasteTimeRecognizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WasteTimeRecognizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51E8DD81D00E76300460028 /* WasteTimeRecognizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteTimeRecognizerUITests.swift; sourceTree = "<group>"; };
 		B51E8DDA1D00E76300460028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B52595101D00EB9800C04060 /* NoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		B52595121D00ED6900C04060 /* AddNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		B52595141D00EEC300C04060 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		B52595161D00EF0000C04060 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		B52595191D00F11700C04060 /* NSDate+WTR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+WTR.swift"; sourceTree = "<group>"; };
 		F062B6772AEAA0929990006D /* Pods_WasteTimeRecognizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WasteTimeRecognizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				B51E8DB81D00E76300460028 /* AppDelegate.swift */,
+				B52595181D00F0EE00C04060 /* Extensions */,
 				B525950E1D00E93E00C04060 /* DataLayer */,
 				B525950C1D00E92600C04060 /* Models */,
 				B52595091D00E8FA00C04060 /* Controllers */,
@@ -145,7 +156,8 @@
 		B52595091D00E8FA00C04060 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B51E8DBA1D00E76300460028 /* ViewController.swift */,
+				B51E8DBA1D00E76300460028 /* NotesViewController.swift */,
+				B52595121D00ED6900C04060 /* AddNoteViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -161,6 +173,7 @@
 		B525950B1D00E91200C04060 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B525950F1D00EB8B00C04060 /* CustomViews */,
 				B51E8DBC1D00E76300460028 /* Main.storyboard */,
 				B51E8DC11D00E76300460028 /* LaunchScreen.storyboard */,
 			);
@@ -170,6 +183,7 @@
 		B525950C1D00E92600C04060 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B52595141D00EEC300C04060 /* Note.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -185,8 +199,25 @@
 		B525950E1D00E93E00C04060 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				B52595161D00EF0000C04060 /* DataManager.swift */,
 			);
 			name = DataLayer;
+			sourceTree = "<group>";
+		};
+		B525950F1D00EB8B00C04060 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				B52595101D00EB9800C04060 /* NoteCell.swift */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		B52595181D00F0EE00C04060 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B52595191D00F11700C04060 /* NSDate+WTR.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		D8EF9F0DDD714A614423C367 /* Frameworks */ = {
@@ -379,7 +410,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B51E8DBB1D00E76300460028 /* ViewController.swift in Sources */,
+				B525951A1D00F11700C04060 /* NSDate+WTR.swift in Sources */,
+				B52595151D00EEC300C04060 /* Note.swift in Sources */,
+				B52595171D00EF0000C04060 /* DataManager.swift in Sources */,
+				B52595131D00ED6900C04060 /* AddNoteViewController.swift in Sources */,
+				B52595111D00EB9800C04060 /* NoteCell.swift in Sources */,
+				B51E8DBB1D00E76300460028 /* NotesViewController.swift in Sources */,
 				B51E8DB91D00E76300460028 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
