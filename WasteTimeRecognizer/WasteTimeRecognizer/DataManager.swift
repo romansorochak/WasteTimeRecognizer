@@ -14,7 +14,7 @@ class DataManager {
     private let realm: Realm
     
     var notes: Results<Note> {
-        return realm.objects(Note).sorted("time", ascending: true)
+        return realm.objects(Note).sorted("date", ascending: true)
     }
     
     private init() {
@@ -35,6 +35,13 @@ class DataManager {
     func addNote(note: Note) throws {
         try realm.write {
             realm.add(note)
+        }
+    }
+    
+    func notesWithInterval(startDate: NSDate, endDate: NSDate) -> [Note] {
+        return notes.filter { (note) -> Bool in
+            
+            note.date >= startDate && note.date <= endDate
         }
     }
 }

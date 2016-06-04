@@ -6,12 +6,13 @@ PODS:
     - Realm (= 1.0.0)
 
 DEPENDENCIES:
+  - Realm
   - RealmSwift
 
 SPEC CHECKSUMS:
   Realm: e15cd8e7c11d3e576f628ba0b7cb855269b4991c
   RealmSwift: 3229306d020d96f83b335f87a0dcbf2cef0e6a2b
 
-PODFILE CHECKSUM: 658e4b0da3fa734f08b0e2b45add4d03ca2571c8
+PODFILE CHECKSUM: 63adbacacb16abe922b3a8c7bfa63ccd06b2f369
 
 COCOAPODS: 1.0.0

@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		175178E1CABD22CF9E6F3968 /* Pods_WasteTimeRecognizerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D329328D43927745BB05CC /* Pods_WasteTimeRecognizerTests.framework */; };
+		542D437B3777244B87888C1A /* Pods_WasteTimeRecognizerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D287B7D91564F9C6025B51 /* Pods_WasteTimeRecognizerUITests.framework */; };
 		B50028671D03355B006AFDAD /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50028661D03355B006AFDAD /* NotificationCenter.swift */; };
+		B50028691D035AE8006AFDAD /* NSDateExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50028681D035AE8006AFDAD /* NSDateExtensionTest.swift */; };
 		B51E8DB91D00E76300460028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E8DB81D00E76300460028 /* AppDelegate.swift */; };
 		B51E8DBB1D00E76300460028 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51E8DBA1D00E76300460028 /* NotesViewController.swift */; };
 		B51E8DBE1D00E76300460028 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51E8DBC1D00E76300460028 /* Main.storyboard */; };
@@ -42,8 +45,14 @@
 
 /* Begin PBXFileReference section */
 		07FF337EEDC2A4D40BB42FF6 /* Pods-WasteTimeRecognizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasteTimeRecognizer.release.xcconfig"; path = "Pods/Target Support Files/Pods-WasteTimeRecognizer/Pods-WasteTimeRecognizer.release.xcconfig"; sourceTree = "<group>"; };
+		27D329328D43927745BB05CC /* Pods_WasteTimeRecognizerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WasteTimeRecognizerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CDEF132CF37A94BBC2DF8CA /* Pods-WasteTimeRecognizerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasteTimeRecognizerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WasteTimeRecognizerUITests/Pods-WasteTimeRecognizerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		58D287B7D91564F9C6025B51 /* Pods_WasteTimeRecognizerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WasteTimeRecognizerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFFAA97C551A826E68156B1 /* Pods-WasteTimeRecognizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasteTimeRecognizer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WasteTimeRecognizer/Pods-WasteTimeRecognizer.debug.xcconfig"; sourceTree = "<group>"; };
+		79ED8C689A2E40A4F92677E5 /* Pods-WasteTimeRecognizerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasteTimeRecognizerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WasteTimeRecognizerTests/Pods-WasteTimeRecognizerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		834F3BB5C1FA82C75DFA7409 /* Pods-WasteTimeRecognizerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasteTimeRecognizerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WasteTimeRecognizerTests/Pods-WasteTimeRecognizerTests.release.xcconfig"; sourceTree = "<group>"; };
 		B50028661D03355B006AFDAD /* NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
+		B50028681D035AE8006AFDAD /* NSDateExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtensionTest.swift; sourceTree = "<group>"; };
 		B51E8DB51D00E76300460028 /* WasteTimeRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WasteTimeRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51E8DB81D00E76300460028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B51E8DBA1D00E76300460028 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +71,7 @@
 		B52595141D00EEC300C04060 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		B52595161D00EF0000C04060 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B52595191D00F11700C04060 /* NSDate+WTR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+WTR.swift"; sourceTree = "<group>"; };
+		E965C7534A88C248506FFED9 /* Pods-WasteTimeRecognizerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasteTimeRecognizerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WasteTimeRecognizerUITests/Pods-WasteTimeRecognizerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F062B6772AEAA0929990006D /* Pods_WasteTimeRecognizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WasteTimeRecognizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				175178E1CABD22CF9E6F3968 /* Pods_WasteTimeRecognizerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				542D437B3777244B87888C1A /* Pods_WasteTimeRecognizerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +108,10 @@
 			children = (
 				6CFFAA97C551A826E68156B1 /* Pods-WasteTimeRecognizer.debug.xcconfig */,
 				07FF337EEDC2A4D40BB42FF6 /* Pods-WasteTimeRecognizer.release.xcconfig */,
+				79ED8C689A2E40A4F92677E5 /* Pods-WasteTimeRecognizerTests.debug.xcconfig */,
+				834F3BB5C1FA82C75DFA7409 /* Pods-WasteTimeRecognizerTests.release.xcconfig */,
+				E965C7534A88C248506FFED9 /* Pods-WasteTimeRecognizerUITests.debug.xcconfig */,
+				3CDEF132CF37A94BBC2DF8CA /* Pods-WasteTimeRecognizerUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -151,6 +167,7 @@
 			children = (
 				B51E8DCD1D00E76300460028 /* WasteTimeRecognizerTests.swift */,
 				B51E8DCF1D00E76300460028 /* Info.plist */,
+				B50028681D035AE8006AFDAD /* NSDateExtensionTest.swift */,
 			);
 			path = WasteTimeRecognizerTests;
 			sourceTree = "<group>";
@@ -235,6 +252,8 @@
 			isa = PBXGroup;
 			children = (
 				F062B6772AEAA0929990006D /* Pods_WasteTimeRecognizer.framework */,
+				27D329328D43927745BB05CC /* Pods_WasteTimeRecognizerTests.framework */,
+				58D287B7D91564F9C6025B51 /* Pods_WasteTimeRecognizerUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -266,9 +285,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B51E8DE01D00E76300460028 /* Build configuration list for PBXNativeTarget "WasteTimeRecognizerTests" */;
 			buildPhases = (
+				3F594452F746CFF12E89D635 /* 📦 Check Pods Manifest.lock */,
 				B51E8DC51D00E76300460028 /* Sources */,
 				B51E8DC61D00E76300460028 /* Frameworks */,
 				B51E8DC71D00E76300460028 /* Resources */,
+				A7F0707AC02FCF54106BEFC2 /* 📦 Embed Pods Frameworks */,
+				44B576F5197A0C1DBF43EAE6 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,9 +306,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B51E8DE31D00E76300460028 /* Build configuration list for PBXNativeTarget "WasteTimeRecognizerUITests" */;
 			buildPhases = (
+				0BCE4510EBA1A7B08FAFB99F /* 📦 Check Pods Manifest.lock */,
 				B51E8DD01D00E76300460028 /* Sources */,
 				B51E8DD11D00E76300460028 /* Frameworks */,
 				B51E8DD21D00E76300460028 /* Resources */,
+				EE5FE959ABC926E410AA0514 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -369,6 +393,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0BCE4510EBA1A7B08FAFB99F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		1282E3CBA436D01C535697E8 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,6 +421,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3F594452F746CFF12E89D635 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		44B576F5197A0C1DBF43EAE6 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WasteTimeRecognizerTests/Pods-WasteTimeRecognizerTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8420275E5CC9140783F6A169 /* 📦 Embed Pods Frameworks */ = {
@@ -399,6 +468,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WasteTimeRecognizer/Pods-WasteTimeRecognizer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A7F0707AC02FCF54106BEFC2 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WasteTimeRecognizerTests/Pods-WasteTimeRecognizerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E8FD6CDFA5C6690B6BECE0EB /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,6 +496,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WasteTimeRecognizer/Pods-WasteTimeRecognizer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE5FE959ABC926E410AA0514 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WasteTimeRecognizerUITests/Pods-WasteTimeRecognizerUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -436,6 +535,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50028691D035AE8006AFDAD /* NSDateExtensionTest.swift in Sources */,
 				B51E8DCE1D00E76300460028 /* WasteTimeRecognizerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +696,7 @@
 		};
 		B51E8DE11D00E76300460028 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79ED8C689A2E40A4F92677E5 /* Pods-WasteTimeRecognizerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = WasteTimeRecognizerTests/Info.plist;
@@ -608,6 +709,7 @@
 		};
 		B51E8DE21D00E76300460028 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 834F3BB5C1FA82C75DFA7409 /* Pods-WasteTimeRecognizerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = WasteTimeRecognizerTests/Info.plist;
@@ -620,6 +722,7 @@
 		};
 		B51E8DE41D00E76300460028 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E965C7534A88C248506FFED9 /* Pods-WasteTimeRecognizerUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = WasteTimeRecognizerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -631,6 +734,7 @@
 		};
 		B51E8DE51D00E76300460028 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CDEF132CF37A94BBC2DF8CA /* Pods-WasteTimeRecognizerUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = WasteTimeRecognizerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

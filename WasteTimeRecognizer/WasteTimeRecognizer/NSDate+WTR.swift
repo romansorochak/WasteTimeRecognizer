@@ -18,3 +18,25 @@ extension NSDate {
         return dateFormatter.stringFromDate(self)
     }
 }
+
+func == (left: NSDate, right: NSDate) -> Bool {
+    return left.isEqualToDate(right)
+}
+
+func > (left: NSDate, right: NSDate) -> Bool {
+    return left.compare(right) == .OrderedDescending
+}
+
+func >= (left: NSDate, right: NSDate) -> Bool {
+    return left > right || left == right
+}
+
+func < (left: NSDate, right: NSDate) -> Bool {
+    return left.compare(right) == .OrderedAscending
+}
+
+func <= (left: NSDate, right: NSDate) -> Bool {
+    return left < right || left == right
+}
+
+

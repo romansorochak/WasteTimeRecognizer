@@ -28,17 +28,17 @@ class NotificationCenter {
         
         if (currentNotificationSettings?.types == UIUserNotificationType.None) {
             // Specify the notification types.
-            var notificationTypes: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Sound]
-//
-//            // Specify the notification actions.
-//            var justInformAction = UIMutableUserNotificationAction()
-//            justInformAction.identifier = "justInform"
-//            justInformAction.title = "O"
-//            justInformAction.activationMode = UIUserNotificationActivationMode.Background
-//            justInformAction.destructive = false
-//            justInformAction.authenticationRequired = false
+            let notificationTypes: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Sound]
+            //
+            //            // Specify the notification actions.
+            //            var justInformAction = UIMutableUserNotificationAction()
+            //            justInformAction.identifier = "justInform"
+            //            justInformAction.title = "O"
+            //            justInformAction.activationMode = UIUserNotificationActivationMode.Background
+            //            justInformAction.destructive = false
+            //            justInformAction.authenticationRequired = false
             
-            var modifyListAction = UIMutableUserNotificationAction()
+            let modifyListAction = UIMutableUserNotificationAction()
             modifyListAction.identifier = "editList"
             modifyListAction.behavior = .TextInput
             modifyListAction.title = "E"
@@ -46,7 +46,7 @@ class NotificationCenter {
             modifyListAction.destructive = false
             modifyListAction.authenticationRequired = true
             
-            var trashAction = UIMutableUserNotificationAction()
+            let trashAction = UIMutableUserNotificationAction()
             trashAction.identifier = "trashAction"
             trashAction.title = "D"
             trashAction.activationMode = UIUserNotificationActivationMode.Background
@@ -55,17 +55,17 @@ class NotificationCenter {
             
             let actionsArray = NSArray(objects: modifyListAction, trashAction)
             let actionsArrayMinimal = NSArray(objects: modifyListAction, trashAction)
-
+            
             // Specify the category related to the above actions.
-            var shoppingListReminderCategory = UIMutableUserNotificationCategory()
+            let shoppingListReminderCategory = UIMutableUserNotificationCategory()
             shoppingListReminderCategory.identifier = "shoppingListReminderCategory"
-            shoppingListReminderCategory.setActions(actionsArray as! [UIUserNotificationAction], forContext: UIUserNotificationActionContext.Default)
-            shoppingListReminderCategory.setActions(actionsArrayMinimal as! [UIUserNotificationAction], forContext: UIUserNotificationActionContext.Minimal)
+            shoppingListReminderCategory.setActions(actionsArray as? [UIUserNotificationAction], forContext: UIUserNotificationActionContext.Default)
+            shoppingListReminderCategory.setActions(actionsArrayMinimal as? [UIUserNotificationAction], forContext: UIUserNotificationActionContext.Minimal)
             
             let categoriesForSettings = NSSet(objects: shoppingListReminderCategory)
             
             // Register the notification settings.
-            let newNotificationSettings = UIUserNotificationSettings(forTypes: notificationTypes, categories: categoriesForSettings as! Set<UIUserNotificationCategory>)
+            let newNotificationSettings = UIUserNotificationSettings(forTypes: notificationTypes, categories: categoriesForSettings as? Set<UIUserNotificationCategory>)
             UIApplication.sharedApplication().registerUserNotificationSettings(newNotificationSettings)
         }
     }
@@ -82,13 +82,13 @@ class NotificationCenter {
     }
     
     func fixNotificationDate(dateToFix: NSDate) -> NSDate {
-//        let dateComponets: NSDateComponents = NSCalendar.currentCalendar().components([NSCalendarUnit.NSDayCalendarUnit, NSCalendarUnit.NSMonthCalendarUnit, NSCalendarUnit.NSYearCalendarUnit, NSCalendarUnit.NSHourCalendarUnit, NSCalendarUnit.NSMinuteCalendarUnit], fromDate: dateToFix)
-//        
-//        dateComponets.second = 0
-//        
-//        let fixedDate: NSDate! = NSCalendar.currentCalendar().dateFromComponents(dateComponets)
+        //        let dateComponets: NSDateComponents = NSCalendar.currentCalendar().components([NSCalendarUnit.NSDayCalendarUnit, NSCalendarUnit.NSMonthCalendarUnit, NSCalendarUnit.NSYearCalendarUnit, NSCalendarUnit.NSHourCalendarUnit, NSCalendarUnit.NSMinuteCalendarUnit], fromDate: dateToFix)
+        //
+        //        dateComponets.second = 0
+        //
+        //        let fixedDate: NSDate! = NSCalendar.currentCalendar().dateFromComponents(dateComponets)
         
-//        return fixedDate
+        //        return fixedDate
         return NSDate().dateByAddingTimeInterval(NSTimeInterval(5))
     }
 }

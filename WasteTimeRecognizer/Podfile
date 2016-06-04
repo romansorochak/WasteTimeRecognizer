@@ -1,9 +1,24 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, "9.0"
+platform :ios, "8.0"
 use_frameworks!
 
 target 'WasteTimeRecognizer' do
 
+pod "Realm"
 pod "RealmSwift"
 
+end
+
+target 'WasteTimeRecognizerTests' do
+
+pod "Realm"
+pod "RealmSwift"
+    
+end
+
+target 'WasteTimeRecognizerUITests' do
+    
+pod "Realm"
+pod "RealmSwift"
+    
 end

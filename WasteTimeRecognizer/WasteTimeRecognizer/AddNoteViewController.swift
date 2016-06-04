@@ -27,7 +27,7 @@ class AddNoteViewController : UIViewController {
     @IBAction func doneAction(sender: UIBarButtonItem) {
         
         let note = Note()
-        note.time = NSDate()
+        note.date = NSDate()
         note.note = noteTextField.text ?? ""
         
         do {
