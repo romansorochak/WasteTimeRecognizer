@@ -14,7 +14,7 @@ class DataManager {
     private let realm: Realm
     
     var notes: Results<Note> {
-        return realm.objects(Note)
+        return realm.objects(Note).sorted("time", ascending: true)
     }
     
     private init() {

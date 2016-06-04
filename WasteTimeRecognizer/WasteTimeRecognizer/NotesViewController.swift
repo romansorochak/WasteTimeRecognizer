@@ -20,6 +20,20 @@ class NotesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.sharedInstance.setupLocalPushNotificationsIfNeed()
+        
+        NotificationCenter.sharedInstance.scheduleLocalNotification()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let notification = UILocalNotification()
+        notification.alertTitle = "Hey Roman!"
+        notification.alertBody = "Alrt body presented immediately"
+        
+        UIApplication.sharedApplication().presentLocalNotificationNow(notification)
     }
     
     override func viewWillAppear(animated: Bool) {
