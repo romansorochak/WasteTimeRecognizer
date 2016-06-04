@@ -73,4 +73,45 @@ class DataManagerTest: XCTestCase {
         
         XCTAssert(notes == expectedNotes, "notesWithInterval doesn't work correclty")
     }
+    
+    func testNotesForDay() {
+        let now = NSDate()
+        let calendar = NSCalendar.currentCalendar()
+        let todayWeekDayNumber = calendar.component(NSCalendarUnit.Weekday, fromDate: now)
+        
+        var expectedTodayNotes = [Note]()
+        
+        var note = Note(date: now, note: "note00")
+        expectedTodayNotes.append(note)
+        mockDataManager.addNote(note)
+        
+        note = Note(date: now + 20, note: "note20")
+        expectedTodayNotes.append(note)
+        mockDataManager.addNote(note)
+        
+        
+        var expectedYesterdayNotes = [Note]()
+        
+        note = Note(date: now - DAY, note: "noteYesterday")
+        expectedYesterdayNotes.append(note)
+        mockDataManager.addNote(note)
+        
+        
+        var expectedTomorrowNotes = [Note]()
+        
+        note = Note(date: now + DAY, note: "nowTomorrow")
+        expectedTomorrowNotes.append(note)
+        mockDataManager.addNote(note)
+        
+        
+        let todayWeekDay = WeekDay(rawValue: todayWeekDayNumber)!
+        var notes = mockDataManager.notesForWeekDay(todayWeekDay)
+        XCTAssert(notes.notes == expectedTodayNotes, "notesForWeekDay doesn't work correclty")
+        
+        notes = mockDataManager.notesForWeekDay(todayWeekDay - 1)
+        XCTAssert(notes.notes == expectedYesterdayNotes, "notesForWeekDay doesn't work correclty")
+        
+        notes = mockDataManager.notesForWeekDay(todayWeekDay + 1)
+        XCTAssert(notes.notes == expectedTomorrowNotes, "notesForWeekDay doesn't work correclty")
+    }
 }

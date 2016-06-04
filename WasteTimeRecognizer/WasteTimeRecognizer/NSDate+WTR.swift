@@ -11,11 +11,17 @@ import Foundation
 private let dateFormatter = NSDateFormatter()
 private let DateFormat = "yyyy-MM-dd HH:mm:ss zzz"
 
-extension NSDate {
+extension NSDate : UIStringConvertible {
     
-    var toString: String {
+    var uiDescription: String {
         dateFormatter.dateFormat = DateFormat
         return dateFormatter.stringFromDate(self)
+    }
+    
+    var weekDay: WeekDay {
+        let calendar = NSCalendar.currentCalendar()
+        let weekDayNumber = calendar.component(NSCalendarUnit.Weekday, fromDate: self)
+        return WeekDay(rawValue: weekDayNumber)!
     }
 }
 

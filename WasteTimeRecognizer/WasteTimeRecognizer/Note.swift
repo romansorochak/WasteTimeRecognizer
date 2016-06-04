@@ -14,6 +14,7 @@ class Note : Object {
     dynamic var date = NSDate()
     dynamic var note = String()
     
+    
     required init(date: NSDate, note: String) {
         super.init()
         
@@ -32,4 +33,13 @@ class Note : Object {
     required init() {
         super.init()
     }
+}
+
+extension Note: MinMaxType {}
+
+struct Notes {
+    
+    let weekDay: WeekDay
+    
+    let notes: [Note]
 }

@@ -16,12 +16,18 @@ class NotesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    private var dayNotes: Notes?
+    
+    
+    
     //MARK: vc life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         NotificationCenter.sharedInstance.setupLocalPushNotificationsIfNeed()
+        
+        dayNotes = DataManager.sharedInstance.notesForWeekDay(.Sunday)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -57,7 +63,7 @@ extension NotesViewController : UITableViewDataSource, UITableViewDelegate {
         
         let note = DataManager.sharedInstance.notes[indexPath.row]
         
-        cell.timeLabel.text = note.date.toString
+        cell.timeLabel.text = note.date.uiDescription
         cell.noteLabel.text = note.note
         
         return cell

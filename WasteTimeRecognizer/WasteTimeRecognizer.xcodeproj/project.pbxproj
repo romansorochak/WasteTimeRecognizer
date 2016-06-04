@@ -24,6 +24,10 @@
 		B52595171D00EF0000C04060 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52595161D00EF0000C04060 /* DataManager.swift */; };
 		B525951A1D00F11700C04060 /* NSDate+WTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52595191D00F11700C04060 /* NSDate+WTR.swift */; };
 		B5EA70E91D036BF20073CEB2 /* DataManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA70E81D036BF20073CEB2 /* DataManagerTest.swift */; };
+		B5EA70EB1D038BA90073CEB2 /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA70EA1D038BA90073CEB2 /* WeekDay.swift */; };
+		B5EA70EE1D038F4E0073CEB2 /* ToStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA70ED1D038F4E0073CEB2 /* ToStringConvertible.swift */; };
+		B5EA70F01D0394790073CEB2 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA70EF1D0394790073CEB2 /* Misc.swift */; };
+		B5EA70F41D03981C0073CEB2 /* WeekDayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA70F31D03981C0073CEB2 /* WeekDayTest.swift */; };
 		EB856A319EFDE380EC8E0DAF /* Pods_WasteTimeRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F062B6772AEAA0929990006D /* Pods_WasteTimeRecognizer.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +77,10 @@
 		B52595161D00EF0000C04060 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B52595191D00F11700C04060 /* NSDate+WTR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+WTR.swift"; sourceTree = "<group>"; };
 		B5EA70E81D036BF20073CEB2 /* DataManagerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerTest.swift; sourceTree = "<group>"; };
+		B5EA70EA1D038BA90073CEB2 /* WeekDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
+		B5EA70ED1D038F4E0073CEB2 /* ToStringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToStringConvertible.swift; sourceTree = "<group>"; };
+		B5EA70EF1D0394790073CEB2 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		B5EA70F31D03981C0073CEB2 /* WeekDayTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDayTest.swift; sourceTree = "<group>"; };
 		E965C7534A88C248506FFED9 /* Pods-WasteTimeRecognizerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasteTimeRecognizerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WasteTimeRecognizerUITests/Pods-WasteTimeRecognizerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F062B6772AEAA0929990006D /* Pods_WasteTimeRecognizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WasteTimeRecognizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -152,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				B51E8DB81D00E76300460028 /* AppDelegate.swift */,
+				B5EA70EC1D038F380073CEB2 /* Common */,
 				B50028651D033543006AFDAD /* Utils */,
 				B52595181D00F0EE00C04060 /* Extensions */,
 				B525950E1D00E93E00C04060 /* DataLayer */,
@@ -170,6 +179,7 @@
 				B51E8DCD1D00E76300460028 /* WasteTimeRecognizerTests.swift */,
 				B50028681D035AE8006AFDAD /* NSDateExtensionTest.swift */,
 				B5EA70E81D036BF20073CEB2 /* DataManagerTest.swift */,
+				B5EA70F31D03981C0073CEB2 /* WeekDayTest.swift */,
 				B51E8DCF1D00E76300460028 /* Info.plist */,
 			);
 			path = WasteTimeRecognizerTests;
@@ -215,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				B52595141D00EEC300C04060 /* Note.swift */,
+				B5EA70EA1D038BA90073CEB2 /* WeekDay.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -249,6 +260,15 @@
 				B52595191D00F11700C04060 /* NSDate+WTR.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B5EA70EC1D038F380073CEB2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B5EA70ED1D038F4E0073CEB2 /* ToStringConvertible.swift */,
+				B5EA70EF1D0394790073CEB2 /* Misc.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		D8EF9F0DDD714A614423C367 /* Frameworks */ = {
@@ -524,12 +544,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B525951A1D00F11700C04060 /* NSDate+WTR.swift in Sources */,
+				B5EA70EE1D038F4E0073CEB2 /* ToStringConvertible.swift in Sources */,
 				B52595151D00EEC300C04060 /* Note.swift in Sources */,
 				B52595171D00EF0000C04060 /* DataManager.swift in Sources */,
 				B50028671D03355B006AFDAD /* NotificationCenter.swift in Sources */,
+				B5EA70F01D0394790073CEB2 /* Misc.swift in Sources */,
 				B52595131D00ED6900C04060 /* AddNoteViewController.swift in Sources */,
 				B52595111D00EB9800C04060 /* NoteCell.swift in Sources */,
 				B51E8DBB1D00E76300460028 /* NotesViewController.swift in Sources */,
+				B5EA70EB1D038BA90073CEB2 /* WeekDay.swift in Sources */,
 				B51E8DB91D00E76300460028 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +563,7 @@
 			files = (
 				B5EA70E91D036BF20073CEB2 /* DataManagerTest.swift in Sources */,
 				B50028691D035AE8006AFDAD /* NSDateExtensionTest.swift in Sources */,
+				B5EA70F41D03981C0073CEB2 /* WeekDayTest.swift in Sources */,
 				B51E8DCE1D00E76300460028 /* WasteTimeRecognizerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
