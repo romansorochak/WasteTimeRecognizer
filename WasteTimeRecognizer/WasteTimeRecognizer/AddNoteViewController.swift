@@ -30,11 +30,7 @@ class AddNoteViewController : UIViewController {
         note.date = NSDate()
         note.note = noteTextField.text ?? ""
         
-        do {
-            try DataManager.sharedInstance.addNote(note)
-        } catch {
-            print(error)
-        }
+        DataManager.sharedInstance.addNote(note)
         
         noteTextField.resignFirstResponder()
         

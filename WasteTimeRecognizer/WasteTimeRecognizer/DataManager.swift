@@ -10,15 +10,20 @@ import Foundation
 import RealmSwift
 
 class DataManager {
-
-    private let realm: Realm
+    
+    let realm: Realm
     
     var notes: Results<Note> {
         return realm.objects(Note).sorted("date", ascending: true)
     }
     
-    private init() {
-        realm = try! Realm()
+    init(realm: Realm) {
+        self.realm = realm
+    }
+    
+    convenience init() {
+        let realm = try! Realm()
+        self.init(realm: realm)
     }
     
     class var sharedInstance: DataManager {
@@ -32,9 +37,13 @@ class DataManager {
         return Static.sharedInstance
     }
     
-    func addNote(note: Note) throws {
-        try realm.write {
-            realm.add(note)
+    func addNote(note: Note) {
+        do {
+            try realm.write {
+                realm.add(note)
+            }
+        } catch {
+            print("addNote - \(error)")
         }
     }
     

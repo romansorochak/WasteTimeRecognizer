@@ -23,6 +23,7 @@
 		B52595151D00EEC300C04060 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52595141D00EEC300C04060 /* Note.swift */; };
 		B52595171D00EF0000C04060 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52595161D00EF0000C04060 /* DataManager.swift */; };
 		B525951A1D00F11700C04060 /* NSDate+WTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52595191D00F11700C04060 /* NSDate+WTR.swift */; };
+		B5EA70E91D036BF20073CEB2 /* DataManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA70E81D036BF20073CEB2 /* DataManagerTest.swift */; };
 		EB856A319EFDE380EC8E0DAF /* Pods_WasteTimeRecognizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F062B6772AEAA0929990006D /* Pods_WasteTimeRecognizer.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		B52595141D00EEC300C04060 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		B52595161D00EF0000C04060 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B52595191D00F11700C04060 /* NSDate+WTR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+WTR.swift"; sourceTree = "<group>"; };
+		B5EA70E81D036BF20073CEB2 /* DataManagerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerTest.swift; sourceTree = "<group>"; };
 		E965C7534A88C248506FFED9 /* Pods-WasteTimeRecognizerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasteTimeRecognizerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WasteTimeRecognizerUITests/Pods-WasteTimeRecognizerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F062B6772AEAA0929990006D /* Pods_WasteTimeRecognizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WasteTimeRecognizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -165,8 +167,9 @@
 		B51E8DCC1D00E76300460028 /* WasteTimeRecognizerTests */ = {
 			isa = PBXGroup;
 			children = (
-				B50028681D035AE8006AFDAD /* NSDateExtensionTest.swift */,
 				B51E8DCD1D00E76300460028 /* WasteTimeRecognizerTests.swift */,
+				B50028681D035AE8006AFDAD /* NSDateExtensionTest.swift */,
+				B5EA70E81D036BF20073CEB2 /* DataManagerTest.swift */,
 				B51E8DCF1D00E76300460028 /* Info.plist */,
 			);
 			path = WasteTimeRecognizerTests;
@@ -535,6 +538,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5EA70E91D036BF20073CEB2 /* DataManagerTest.swift in Sources */,
 				B50028691D035AE8006AFDAD /* NSDateExtensionTest.swift in Sources */,
 				B51E8DCE1D00E76300460028 /* WasteTimeRecognizerTests.swift in Sources */,
 			);
