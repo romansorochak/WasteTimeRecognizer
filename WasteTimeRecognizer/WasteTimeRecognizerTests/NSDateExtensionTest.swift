@@ -31,14 +31,9 @@ class NSDateExtensionTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
-    }
     
-    func testDateOperators() {
+    
+    func testNSDateCompareOperators() {
         XCTAssert(date == sameDate, "operator '==' doesn't work correctly")
         XCTAssert(date >= sameDate, "operator '>=' doesn't work correctly")
         XCTAssert(date <= sameDate, "operator '>=' doesn't work correctly")
@@ -48,5 +43,16 @@ class NSDateExtensionTest: XCTestCase {
         
         XCTAssert(date >= lessDate, "operator '>=' doesn't work correctly")
         XCTAssert(date > lessDate, "operator '>' doesn't work correctly")
+    }
+    
+    func testNSDateAddRemoveOperators() {
+        let add = 75
+        let expectedNextDate = date.dateByAddingTimeInterval(NSTimeInterval(add))
+        XCTAssert(expectedNextDate.compare(date + add) == .OrderedSame,
+                  "operator '+' doesn't work correctly")
+        
+        let expectedLessDate = date.dateByAddingTimeInterval(NSTimeInterval(-add))
+        XCTAssert(expectedLessDate.compare(date - add) == .OrderedSame,
+                  "operator '-' doesn't work correctly")
     }
 }

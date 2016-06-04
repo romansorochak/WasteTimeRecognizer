@@ -165,9 +165,9 @@
 		B51E8DCC1D00E76300460028 /* WasteTimeRecognizerTests */ = {
 			isa = PBXGroup;
 			children = (
+				B50028681D035AE8006AFDAD /* NSDateExtensionTest.swift */,
 				B51E8DCD1D00E76300460028 /* WasteTimeRecognizerTests.swift */,
 				B51E8DCF1D00E76300460028 /* Info.plist */,
-				B50028681D035AE8006AFDAD /* NSDateExtensionTest.swift */,
 			);
 			path = WasteTimeRecognizerTests;
 			sourceTree = "<group>";
